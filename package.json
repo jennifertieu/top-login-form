@@ -1,0 +1,22 @@
+{
+  "name": "top-login-form",
+  "version": "1.0.0",
+  "description": "The Odin Project Sign Up Form",
+  "main": "login.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jennifertieuu/top-login-form.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jennifertieuu/top-login-form/issues"
+  },
+  "homepage": "https://github.com/jennifertieuu/top-login-form#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
