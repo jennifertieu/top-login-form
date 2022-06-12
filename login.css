@@ -35,10 +35,12 @@ body {
 /* background image */
 .background__image {
     height: 100vh;
-    width: 40%;
 }
 
 img {
     max-width: 100%; /* adjust to parent container */
+    height: auto; /* resize height to rendered width */
+    /* aspect-ratio: auto already defined in user-agent stylesheet  */
 }
+
 
