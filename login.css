@@ -34,6 +34,7 @@ body {
 
 /* background image */
 .background__image {
+    position: relative; /* make images relative to image container */
     height: 100vh;
 }
 
@@ -43,4 +44,18 @@ img {
     /* aspect-ratio: auto already defined in user-agent stylesheet  */
 }
 
+.background__image-forest {
+    min-height: 100%;
+}
+
+.background__image-odin {
+    position: absolute;
+}
+
+.background__image-caption {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%, -50%); /* move caption to the center, offset the left 50% */
+}
 
