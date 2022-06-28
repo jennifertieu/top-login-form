@@ -17,37 +17,41 @@
         </div>
         <div class="background__image-caption">Photo By <a href="">Halie West</a> on <a href="">Unsplash</a></div>
     </div>
-    <!--Background Quote-->
-    <div>
-        <p>
-            This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams
-            Sign up <span>now</span> to get started.
-            You <span>know</span> you want to.
-        </p>
+    <div class="form__container">
+        <!--Background Quote-->
+        <div class="form__quote">
+            <p>
+                This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams
+                Sign up <span>now</span> to get started.
+                You <span>know</span> you want to.
+            </p>
+        </div>
+        <!--Sign Up Form-->
+        <form class="form__sign-up" action="" method="post">
+            <h1>Let's do this!</h1>
+            <div>
+                <label for="first-name">First Name</label>
+                <input type="text" name="first-name" id="first-name">
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last-name" id="last-name">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <label for="phone-number">Phone Number</label>
+                <input type="text" name="phone-number" id="phone-number">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                <label for="password-confirmation">Confirm Password</label>
+                <input type="password" name="password-confirmation" id="password-confirmation">
+            </div>
+            <div class="form__button-container">
+                <button class="submit-button">Create Account</button>
+                <div>Already have an account? <a href="">Log In</a></div>
+            </div>
+        </form>
     </div>
-    <!--Sign Up Form-->
-    <form class="form" action="" method="post">
-        <h1>Let's do this!</h1>
-        <div>
-            <label for="first-name">First Name</label>
-            <input type="text" name="first-name" id="first-name">
-            <label for="last-name">Last Name</label>
-            <input type="text" name="last-name" id="last-name">
-        </div>
-        <div>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
-            <label for="phone-number">Phone Number</label>
-            <input type="text" name="phone-number" id="phone-number">
-        </div>
-        <div>
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password">
-            <label for="password-confirmation">Confirm Password</label>
-            <input type="password" name="password-confirmation" id="password-confirmation">
-        </div>
-        <button class="submit-button">Create Account</button>
-        <div>Already have an account? <a href="">Log In</a></div>
-    </form>
 </body>
 </html>
