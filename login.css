@@ -1,14 +1,15 @@
 /* review learned concepts 
-    - lets reset
-    - import fonts 
+    - lets reset *
+    - import fonts *
     - use child combinator ">"
     - use adjacent sibling combinator 
     - use general sibling combinator
     - pseudo selectors - pseudo classes 
     - pseudo selectors - pseudo elements 
     - attribute selectors 
-    - positioning 
-    - css functions  custom properties 
+    - positioning *
+    - css functions  *
+    - custom properties *
 */
 
 @import url("normalize.css");
@@ -22,7 +23,8 @@
 }
 
 :root {
-
+    --img-width: 40%;
+    --form-width: 60%; 
     
 }
 
@@ -32,10 +34,11 @@ body {
     font-family: "Norse-Bold", Arial, Helvetica, sans-serif;
 }
 
-/* background image */
+/* Background Image */
 .background__image {
     position: relative; /* make images relative to image container */
     height: 100vh;
+    width: calc(100% - var(--form-width));
 }
 
 img {
@@ -46,6 +49,7 @@ img {
 
 .background__image-forest {
     height: 100%;
+    width: 100%;
 }
 
 .background__transparent {
@@ -74,5 +78,21 @@ img {
     left: 50%;
     bottom: 10px;
     transform: translate(-50%, -50%); /* move caption to the center, offset the left 50% */
+}
+
+/* Form Container */
+.form__container {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - var(--img-width));
+}
+
+/* Background Quote */
+.form__quote {
+    height: 35%;
+}
+
+.form__sign-up {
+    height: 35%;
 }
 
