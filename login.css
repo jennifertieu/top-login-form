@@ -85,6 +85,7 @@ img {
     display: flex;
     flex-direction: column;
     width: calc(100% - var(--img-width));
+    margin: 0 2rem;
 }
 
 /* Background Quote */
@@ -94,7 +95,6 @@ img {
     align-content: center;
     height: 35%;
     flex-direction: column;
-    margin: 0 2rem;
     font-size: 1.5rem;
 }
 
