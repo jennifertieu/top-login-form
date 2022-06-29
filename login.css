@@ -89,7 +89,13 @@ img {
 
 /* Background Quote */
 .form__quote {
+    display: flex;
+    justify-content: center;
+    align-content: center;
     height: 35%;
+    flex-direction: column;
+    margin: 0 2rem;
+    font-size: 1.5rem;
 }
 
 .form__sign-up {
