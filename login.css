@@ -1,9 +1,9 @@
 /* review learned concepts 
     - lets reset *
     - import fonts *
-    - use child combinator ">"
-    - use adjacent sibling combinator 
-    - use general sibling combinator
+    - use child combinator ">" *
+    - use adjacent sibling combinator "+"
+    - use general sibling combinator "~"
     - pseudo selectors - pseudo classes 
     - pseudo selectors - pseudo elements 
     - attribute selectors 
@@ -19,7 +19,7 @@
 }
 
 * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 :root {
@@ -70,7 +70,7 @@ img {
 
 .background__text-odin {
     font-size: 5.5rem;
-
+    color: white;
 }
 
 .background__image-caption {
@@ -100,5 +100,30 @@ img {
 
 .form__sign-up {
     height: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form__sign-up > div {
+    display: flex;
+    gap: 2rem;
+}
+
+.form__sign-up > div > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 30%;
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+input {
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
 }
 
