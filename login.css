@@ -4,7 +4,7 @@
     - use child combinator ">" *
     - use adjacent sibling combinator "+"
     - use general sibling combinator "~"
-    - pseudo selectors - pseudo classes 
+    - pseudo selectors - pseudo classes *
     - pseudo selectors - pseudo elements 
     - attribute selectors 
     - positioning *
@@ -25,13 +25,14 @@
 :root {
     --img-width: 40%;
     --form-width: 60%; 
+    --form-container-padding: 0 2rem;
     
 }
 
 
 body {
     display: flex;
-    font-family: "Norse-Bold", Arial, Helvetica, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Background Image */
@@ -58,7 +59,7 @@ img {
     justify-content: center;
     align-items: center;
     gap: 5px;
-    height: 20%;
+    height: 25%;
     width: 100%;
     top: 15%;
     background-color: rgba(0, 0, 0, .5);
@@ -70,14 +71,20 @@ img {
 
 .background__text-odin {
     font-size: 5.5rem;
+    font-family: Norse-Bold;
     color: white;
 }
 
 .background__image-caption {
     position: absolute;
+    color: white;
     left: 50%;
     bottom: 10px;
     transform: translate(-50%, -50%); /* move caption to the center, offset the left 50% */
+}
+
+.background__image-caption a {
+    color: #fff;
 }
 
 /* Form Container */
@@ -85,7 +92,6 @@ img {
     display: flex;
     flex-direction: column;
     width: calc(100% - var(--img-width));
-    margin: 0 2rem;
 }
 
 /* Background Quote */
@@ -95,35 +101,69 @@ img {
     align-content: center;
     height: 35%;
     flex-direction: column;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-color: #F8F8F8;
+    padding: var(--form-container-padding);
 }
+
+.form__quote span {
+    font-style: italic;
+}
+
+/* Sign Up Form */
 
 .form__sign-up {
     height: 35%;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    padding: var(--form-container-padding);
+    padding-bottom: 2rem;
+    box-shadow: 0 5px 5px lightgray;
 }
 
 .form__sign-up > div {
     display: flex;
-    gap: 2rem;
+    gap: 10%;
+    margin-bottom: 1rem;
 }
 
 .form__sign-up > div > div {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10%;
     width: 30%;
 }
 
 label {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 input {
+    border: 1px solid #E5E7EB;
     border-radius: 5px;
-    padding: 5px;
+    padding: .25rem;
     width: 100%;
 }
 
+input:focus {
+    outline: none;
+    border: 2px solid blue;
+    box-shadow: 0 5px 5px lightgray;
+}
+
+.form__button-container{
+    flex-direction: column;
+    margin: 1.5rem 0;
+    padding: var(--form-container-padding);
+}
+
+.submit-button {
+    border: none;
+    border-radius: 5px;
+    background-color: #596D48;
+    color: #fff;
+    padding: .5rem 2.5rem;
+
+}

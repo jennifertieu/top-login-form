@@ -29,8 +29,8 @@
             </p>
         </div>
         <!--Sign Up Form-->
-        <form class="form__sign-up" action="" method="post">
-            <h1>Let's do this!</h1>
+        <form id="sign-up-form" class="form__sign-up" action="" method="post">
+            <h2>Let's do this!</h2>
             <div>
                 <div class="form__first-name">
                     <label for="first-name">First Name</label>
@@ -52,20 +52,24 @@
                 </div>
             </div>
             <div>
-                <div class="form__password">
+                <div class="form__password error-feedback">
                     <label for="password">Password</label>
                     <input type="password" name="password" id="password">
                 </div>
-                <div class="form__password-confirmation">
+                <div class="form__password-confirmation error-feedback">
                     <label for="password-confirmation">Confirm Password</label>
                     <input type="password" name="password-confirmation" id="password-confirmation">
                 </div>
             </div>
-            <div class="form__button-container">
-                <button class="submit-button">Create Account</button>
-                <div>Already have an account? <a href="">Log In</a></div>
-            </div>
         </form>
+        <div class="form__button-container">
+            <div>
+                <button class="submit-button" form="sign-up-form">Create Account</button>
+            </div>
+            <p>Already have an account?
+                <a href="">Log In</a>
+            </p>
+        </div>
     </div>
 </body>
 </html>
