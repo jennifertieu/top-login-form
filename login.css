@@ -26,6 +26,8 @@
     --img-width: 40%;
     --form-width: 60%; 
     --form-container-padding: 0 2rem;
+    --odin-green: #596D48;
+    --odin-input-grey: #E5E7EB;
     
 }
 
@@ -143,7 +145,7 @@ label {
 }
 
 input {
-    border: 1px solid #E5E7EB;
+    border: 1px solid var(--odin-input-grey);
     border-radius: 5px;
     padding: .25rem;
     width: 100%;
@@ -155,17 +157,25 @@ input:focus {
     box-shadow: 0 5px 5px lightgray;
 }
 
-.form__button-container{
+/* Form Button */
+
+.form__button-container {
     flex-direction: column;
     margin: 1.5rem 0;
     padding: var(--form-container-padding);
 }
 
+.form__button-container p a {
+    text-decoration: none;
+    color: var(--odin-green);
+    font-weight: 700;
+}
+
 .submit-button {
     border: none;
     border-radius: 5px;
-    background-color: #596D48;
+    background-color: var(--odin-green);
     color: #fff;
     padding: 1rem 3.5rem;
-
+    box-shadow: 5px 5px 5px lightgrey;
 }
