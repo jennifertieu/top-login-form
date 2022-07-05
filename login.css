@@ -67,6 +67,7 @@ img {
 
 .background__image-odin {
     height: 80%;
+    width: auto;
 }
 
 .background__text-odin {
@@ -119,6 +120,7 @@ img {
     flex-direction: column;
     padding: var(--form-container-padding);
     padding-bottom: 2rem;
+    gap: 10%;
     box-shadow: 0 5px 5px lightgray;
 }
 
@@ -164,6 +166,6 @@ input:focus {
     border-radius: 5px;
     background-color: #596D48;
     color: #fff;
-    padding: .5rem 2.5rem;
+    padding: 1rem 3.5rem;
 
 }
