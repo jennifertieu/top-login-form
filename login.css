@@ -18,10 +18,6 @@
     src: url("/font/Norse-Bold.otf") format("woff2");
 }
 
-* {
-    /* border: 1px solid red; */
-}
-
 :root {
     --img-width: 40%;
     --form-width: 60%; 
@@ -178,4 +174,8 @@ input:focus {
     color: #fff;
     padding: 1rem 3.5rem;
     box-shadow: 5px 5px 5px lightgrey;
+}
+
+.invalid-feedback {
+    color: red;
 }

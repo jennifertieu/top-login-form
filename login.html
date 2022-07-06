@@ -52,15 +52,18 @@
                 </div>
             </div>
             <div>
-                <div class="form__password error-feedback">
+                <div class="form__password">
                     <label for="password">Password</label>
                     <input type="password" name="password" id="password" required>
+                    <small class="invalid-feedback"></small>
                 </div>
-                <div class="form__password-confirmation error-feedback">
+                <div class="form__password-confirmation">
                     <label for="password-confirmation">Confirm Password</label>
                     <input type="password" name="password-confirmation" id="password-confirmation" required>
+                    <small class="invalid-feedback"></small>
                 </div>
             </div>
+            <div class="form-feedback"></div>
         </form>
         <div class="form__button-container">
             <div>
@@ -71,5 +74,6 @@
             </p>
         </div>
     </div>
+    <script defer type="text/javascript" src="login.js"></script>
 </body>
 </html>
